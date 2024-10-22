@@ -1,0 +1,234 @@
+/* Existing CSS */
+body{
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	align-items: center;
+	background-image: url(assets/img/hubungi.jfif);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #112D4E;
+    font-size: 20px;
+    transition: 0.3s color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+    background-color: #1c388e; /* Ubah warna latar belakang saat aktif */
+    border-radius: 10px; /* Atur sudut border-radius */
+}
+
+.nav-link:hover, nav-link.active {
+    color: #000;
+}
+
+.navbar-brand img {
+    height: 60px;
+    max-height: 100%;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid #1c388e;
+    margin-right: 10px;
+}
+.dropdown-menu {
+    background-color: #fff; /* Ganti dengan warna latar belakang yang diinginkan */
+    padding: 0.5rem; /* Atur padding sesuai kebutuhan */
+}
+
+.dropdown-item {
+    color: #666777; /* Ganti dengan warna teks yang diinginkan */
+    font-weight: 500; /* Ganti dengan gaya font yang diinginkan */
+    position: relative;
+}
+
+.dropdown-item:hover {
+    color: #000; /* Ganti dengan warna teks yang diinginkan saat dihover */
+}
+
+
+/* Existing CSS */
+.container {
+	width:80%;
+	margin:0 auto;
+}
+
+section {
+	padding:50px 0;
+}
+
+section h3 {
+	text-align: center;
+	padding:50px 0;
+	color: #ffffff;
+	margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.box {
+	color: #ffffff;
+}
+
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.box .col-4 {
+	width:25%;
+	padding:20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+
+.box .col-4 h4 {
+	margin:20px 0;
+}
+
+.contact-in {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map {
+	width: 100%;
+	height: auto;
+	flex: 50%;
+}
+
+.contact-map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.contact-form {
+	width: 100%;
+	height: auto;
+	flex: 50%;
+	padding: 30px;
+	text-align: center;
+}
+
+.contact-form h1 {
+	margin-bottom: 10px;
+}
+
+.contact-form-txt {
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 50px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+.contact-form-txt::placeholder {
+	color: #888888;
+}
+
+.contact-form-textarea {
+	width: 100%;
+	height: 130px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 10px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-textarea::placeholder {
+	color: #888888;
+}
+
+.contact-form-btn {
+	width: 100%;
+	border:none;
+	outline: none;
+	border-radius: 50px;
+	background: #1c388e;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 0;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+footer {
+	margin-top: 30px;
+	padding:10px 0;
+	background-color: #3b4775;
+	color: #fff;
+	text-align: center;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #112D4E;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+	
+	.box .col-4 {
+		width:100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+}

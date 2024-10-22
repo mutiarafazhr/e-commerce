@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="hubungi.css">
+    <title>Hubungi Kami</title>
+</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand me-auto" href="#">
+					<img src="assets/img/saya.jpeg" alt="Logo">
+				</a>
+				<a class="navbar-brand me-auto" href="#">Mutiara Fitria</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mutiara Fitria</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link mx-lg-2" aria-current="page" href="index.html">Beranda</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mx-lg-2" href="tentang.html">Tentang Kami</a>
+							</li>
+	
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									Produk
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="busana.html">Busana</a></li>
+									<li><a class="dropdown-item" href="elektronik.html">Elektronik</a></li>
+									<li><a class="dropdown-item" href="dapur.html">Peralatan Dapur</a></li>
+									<li><a class="dropdown-item" href="kosmetik.html">Kosmetik</a></li>
+								</ul>
+							</li>
+	
+							<li class="nav-item">
+								<a class="nav-link mx-lg-2" href="galeri.html">Galeri</a>
+							</li>
+	
+							<li class="nav-item">
+								<a class="nav-link active" href="hubungi.html">Hubungi Kami</a>
+							</li>
+	
+						</ul>
+	
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+
+		<section class="service">
+			<div class="container">
+				<h3>CONTACT INFO</h3>
+				<div class="box">
+					<div class="col-4">
+						<h4>Nama</h4>
+						<p>Mutiara Fitria Azzahra</p>
+					</div>
+					<div class="col-4">
+						<h4>Email</h4>
+						<p>mutiarafazhr@gmail.com</p>
+					</div>
+					<div class="col-4">
+						<h4>Alamat</h4>
+						<p>Legok, Kab.Tangerang</p>
+					</div>
+					<div class="col-4">
+						<h4>No Hp</h4>
+						<p>0895321790621</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="contact-in">
+			<div class="contact-map">
+				<iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Legok,Kab.Tangerang&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<div class="contact-form">
+				<h1>Contact Us</h1>
+				<form action="hubungi.php" name="frmHubungi" method="post" enctype="multipart/form-data">
+                <input type="text" class="contact-form-txt" placeholder="Nama" name="name" required>
+                <input type="text" class="contact-form-txt" placeholder="Email" name="email" required>
+                <input type="text" class="contact-form-txt" placeholder="Subject" name="subject" required>
+                <input type="text" class="contact-form-txt" placeholder="NomorHP" name="nomor" required>
+				<textarea placeholder="Pesan" name="pesan" class="contact-form-textarea"></textarea>
+				<button type="submit" class="contact-form-btn" value="kirim" name="btnKirim">Submit</button>
+                </form>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<small>Copyright &copy; 2024 - MF. All Rights Reserved.</small>
+			</div>
+		</footer>
+	
+		<!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
+	</body>
+</html>

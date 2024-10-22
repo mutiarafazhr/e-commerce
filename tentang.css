@@ -1,0 +1,135 @@
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #112D4E;
+    font-size: 20px;
+    transition: 0.3s color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+    background-color: #1c388e; /* Ubah warna latar belakang saat aktif */
+    border-radius: 10px; /* Atur sudut border-radius */
+}
+
+.nav-link:hover, nav-link.active {
+    color: #000;
+}
+
+.navbar-brand img {
+    height: 60px;
+    max-height: 100%;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid #1c388e;
+    margin-right: 10px;
+}
+.dropdown-menu {
+    background-color: #fff; /* Ganti dengan warna latar belakang yang diinginkan */
+    padding: 0.5rem; /* Atur padding sesuai kebutuhan */
+}
+
+.dropdown-item {
+    color: #020202; /* Ganti dengan warna teks yang diinginkan */
+    font-weight: 500; /* Ganti dengan gaya font yang diinginkan */
+    position: relative;
+}
+
+.dropdown-item:hover {
+    color: #000; /* Ganti dengan warna teks yang diinginkan saat dihover */
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #112D4E;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* Content */
+body {
+    background-image: url(assets/img/tentang.jfif);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+}
+.about-us {
+    width: 80%;
+    margin: 150px auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center-align text within the profile */
+    margin-top: 50px; /* Adjust top margin as needed */
+}
+
+.profile img {
+    width: 45%; /* Adjust as needed */
+    margin-right: 20px;
+    border: 2px solid #e4eaea; /* Atur border untuk video */
+    border-radius: 10px; /* Atur sudut border-radius */
+    margin-bottom: 20px;
+}
+
+.profile .info {
+    font-size: 18px;
+}
+
+.profile h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+ footer {
+	padding:10px 0;
+	background-color: #3b4775;
+	color: #fff;
+	text-align: center;
+}
